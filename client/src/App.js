@@ -1,14 +1,23 @@
 import './App.css';
-import Body from './components/body';
-import Header from './components/header';
-import Footer from './components/footer';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from './pages/Home';
+import About from './pages/About';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/about",
+    element: <About />,
+  }
+]);
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Body />
-      <Footer />
+    <div className="w-screen h-screen">
+      <RouterProvider router={router} />
     </div>
   );
 }
