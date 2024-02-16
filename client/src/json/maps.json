@@ -1,0 +1,18 @@
+[
+    {
+        "id": "1",
+        "mapName": "Tokyo 2024", 
+        "mapDescription": "A travel to Tokyo in 2024",
+        "mapImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1920px-React-icon.svg.png",
+        "year": "2024",
+        "month": "7"
+    },
+    {
+        "id": "2",
+        "mapName": "Paris 2021", 
+        "mapDescription": "A travel to Paris in 2021",
+        "mapImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1920px-React-icon.svg.png",
+        "year": "2021",
+        "month": "6"
+    }
+]
