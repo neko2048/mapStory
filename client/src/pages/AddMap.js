@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addMap } from "../redux/mapSlice";
 import Header from "../components/Header";
+import { createMap } from "../api";
 
 export default function AddMap() {
-    const [mapName, setMapName] = React.useState("");
-    const [mapDescription, setMapDescription] = React.useState("");
+    const [mapName, setMapName] = useState("");
+    const [mapDescription, setMapDescription] = useState("");
     
     const dispatch = useDispatch();
 
@@ -13,8 +14,10 @@ export default function AddMap() {
         window.location.href = "/";
     };
 
-    const handleAddMap = () => {
-        dispatch(addMap({ mapName, mapDescription }));
+    const handleAddMap = async () => {
+        // dispatch(addMap({ mapName, mapDescription }));
+        const res = await createMap({ mapName, mapDescription });
+        console.log(res.data);
         alert("Map added! Map Name: " + mapName);
         setMapName("");
         setMapDescription("");
