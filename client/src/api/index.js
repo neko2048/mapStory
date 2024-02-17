@@ -14,3 +14,12 @@ export const createMap = async ({ mapName, mapDescription }) => {
 
 };
 
+export const getAllMaps = async () => {
+    try {
+        const res = await axios.get(`${baseUrl}api/v1/posts`);
+        return res.data;
+    } catch (error) {
+        console.log(error.response);
+        alert("Failed to fetch maps");
+    }
+};

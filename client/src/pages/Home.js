@@ -1,5 +1,5 @@
 import '../App.css';
-import Body from '../components/Body';
+import HomeBody from '../components/HomeBody';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <Header />
-      <Body />
+      <HomeBody />
       <Footer />
     </div>
   );

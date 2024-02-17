@@ -28,6 +28,24 @@ app.post('/api/v1/posts', async (req, res) => {
         });
 }});
 
+app.get('/api/v1/posts', async (req, res) => {
+    try {
+        const map = await Map.find();
+        res.status(200).json({
+            status: 'success',
+            data: {
+                data: map,
+            }
+        });
+    } catch (error) {
+        console.log(error);
+        res.json({
+            status: 'error',
+            message: error,
+        });
+    }
+});
+
 app.listen(8080, () => {
     console.log('Server is running on port 8080');
 });
