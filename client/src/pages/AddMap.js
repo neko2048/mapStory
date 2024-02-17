@@ -17,7 +17,7 @@ export default function AddMap() {
     const handleAddMap = async () => {
         // dispatch(addMap({ mapName, mapDescription }));
         const res = await createMap({ mapName, mapDescription });
-        console.log(res.data);
+        console.log(res);
         alert("Map added! Map Name: " + mapName);
         setMapName("");
         setMapDescription("");

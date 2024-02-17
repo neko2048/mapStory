@@ -4,8 +4,8 @@ const baseUrl = 'http://localhost:8080/';
 
 export const createMap = async ({ mapName, mapDescription }) => {
     try {
-        const response = await axios.post(`${baseUrl}api/v1/posts`, { mapName, mapDescription });
-        return response;
+        const res = await axios.post(`${baseUrl}api/v1/posts`, { mapName, mapDescription });
+        return res;
     }
     catch (error) {
         console.log(error.response);
