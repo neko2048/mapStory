@@ -2,6 +2,7 @@ import './App.css';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from './pages/Home';
 import About from './pages/About';
+import AddMap from './pages/AddMap';
 import MapDetail from './pages/MapDetail';
 
 const router = createBrowserRouter([
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About />,
+  },
+  {
+    path: "/addMap",
+    element: <AddMap />,
   },
   {
     path: "/maps/:id",
