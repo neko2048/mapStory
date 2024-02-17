@@ -32,7 +32,7 @@ export default function Maps(props) {
         </nav>
         {data.map((el, index)=>(
             <div className="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col" key={index}>
-                <Link to={`/post/${el.mapName.replace(/ /g, '-')}`}>
+                <Link to={`/maps/${el._id}`}>
                             
                 <img className="hover:grow hover:shadow-lg" src={el.mapImage} alt={el.mapName} />
                 <div className="pt-3 flex items-center justify-between">

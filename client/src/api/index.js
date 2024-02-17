@@ -23,3 +23,14 @@ export const getAllMaps = async () => {
         alert("Failed to fetch maps");
     }
 };
+
+export const getMap = async ({ id }) => {
+    try {
+        const res = await axios.get(`${baseUrl}api/v1/posts/${id}`);
+        console.log(res.data);
+        return res.data;
+    } catch (err) {
+        console.log(err.response);
+        alert('Failed to fetch map');
+    }
+};
