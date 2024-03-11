@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import mapData from '../json/maps.json';
 
 
-export default function Maps(props) {
+export default function MapLists(props) {
     const { data } = props;
 
     return (

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import "./header.css";
 import { Link } from 'react-router-dom';
 import { getAllMaps } from '../api';
-import Maps from './Maps';
+import MapLists from './MapLists';
 
 
 export default function HomeBody() {
@@ -60,7 +60,7 @@ export default function HomeBody() {
         </div>
 
         <section class="bg-white py-8">
-            <Maps data={maps}/>
+            <MapLists data={maps}/>
         </section>
         </body>
     );
