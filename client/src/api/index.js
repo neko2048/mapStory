@@ -34,3 +34,14 @@ export const getMap = async ({ id }) => {
         alert('Failed to fetch map');
     }
 };
+
+export const getMapboxAPI = async () => {
+    try {
+        const res = await axios.get(`${baseUrl}api/v1/api_keys`);
+        console.log(res.data);
+        return res.data;
+    } catch (err) {
+        console.log(err.response);
+        alert('Failed to fetch map');
+    }
+};
