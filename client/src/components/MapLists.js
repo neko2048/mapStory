@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import "./header.css";
+import "./style/header.css";
 import { Link } from 'react-router-dom';
 import mapData from '../json/maps.json';
 
@@ -45,7 +45,7 @@ export default function MapLists(props) {
                 </Link>
             </div>
         ))}
-        <div className="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col" key={Object.keys(mapData).length + 1}>
+        <div className="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col" key={Object.keys(data).length + 1}>
             <Link to={`/AddMap`}> 
             <img className="hover:grow hover:shadow-lg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1920px-React-icon.svg.png" alt="Add A Map" />
             <div className="pt-3 flex items-center justify-between">
