@@ -7,8 +7,8 @@ import MapView from '../components/MapView';
 export default function MapDetail(){
     return (
         <div>
-            <Header />
-            <MapView />
+            <div><Header /></div>
+            <div><MapView /></div>
         </div>
     );
 }

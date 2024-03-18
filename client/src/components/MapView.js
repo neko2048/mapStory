@@ -12,8 +12,8 @@ export default function MapView(){
     mapboxgl.accessToken = mapboxAPI;
     const mapContainer = useRef(null);
     const mapView = useRef(null);
-    const [lng, setLng] = useState(-70.9);
-    const [lat, setLat] = useState(42.35);
+    const [lng, setLng] = useState(121.53897776845785);
+    const [lat, setLat] = useState(25.014753535796636);
     const [zoom, setZoom] = useState(9);
 
     // obtain mapbox API key
